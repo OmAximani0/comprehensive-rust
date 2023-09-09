@@ -31,7 +31,7 @@ jobs:
           diff=$(git diff --name-status ${{ github.event.before }} ${{ github.sha }})
           
           # Store the diff in an environment variable
-          echo "::set-env name=GIT_DIFF::$diff"
+          echo "GIT_DIFF=$diff" >> "$GITHUB_ENV"
       
       - name: Annotate changes
         run: |
