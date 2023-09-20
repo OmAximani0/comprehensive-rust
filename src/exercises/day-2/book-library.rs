@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// ANCHOR: solution
 // ANCHOR: setup
 struct Library {
     books: Vec<Book>,
@@ -76,7 +77,7 @@ impl Library {
 
     // ANCHOR: Library_print_books
     //fn print_books(self) {
-    //    todo!("Iterate over `self.books` and each book's title and year")
+    //    todo!("Iterate over `self.books` and print each book's title and year")
     //}
     // ANCHOR_END: Library_print_books
     fn print_books(&self) {
